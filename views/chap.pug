@@ -1,0 +1,32 @@
+include ./layouts/header
+section.chap.container
+    if chap
+      .chap-title
+        h2.my-1=story.name
+        h3.my-1=chap.name
+        .button.my-1
+          button.btn.next Next
+          select(name='' id='')
+            if story.chaps
+              each chap in story.chaps
+                option(value=`${chap.id}`)=chap.name
+          button.btn.prev Prev
+      .chap-content!=chap.content
+    section.carbon.dark
+      .content
+        h2 Commiting To Carbon Negative
+        p
+          | Microsoft will be carbon negative by 2030 and by 2050 we will remove
+          | all carbon the company has emitted since it was founded in 1975
+        a.btn(href='#')
+          | Learn More
+          i.fas.fa-chevron-right
+    section.follow
+      p Follow Microsoft
+      a(href='https://facebook.com')
+        img(src='https://i.ibb.co/LrVMXNR/social-fb.png' alt='Facebook')
+      a(href='https://twitter.com')
+        img(src='https://i.ibb.co/vJvbLwm/social-twitter.png' alt='Twitter')
+      a(href='https://linkedin.com')
+        img(src='https://i.ibb.co/b30HMhR/social-linkedin.png' alt='Linkedin')
+include ./layouts/footer

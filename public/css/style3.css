@@ -1,0 +1,160 @@
+@import "https: //fonts.googleapis.com/css?family=Raleway";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+select {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+}
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 2rem 0;
+}
+.bg-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px #17a2b8;
+  opacity: 0.9;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a:hover {
+  color: #17a2b8;
+}
+/* list story */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 5rem;
+}
+/* Home cards */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+.home-cards img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* Xbox */
+.xbox {
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  height: 350px;
+  background: url("https://i.ibb.co/tBJGPD9/xbox.png") no-repeat center
+    center/cover;
+  margin-bottom: 20px;
+}
+.xbox .content {
+  width: 40%;
+  padding: 50px 0 0 30px;
+}
+
+.xbox p,
+.carbon p {
+  margin: 10px 0 20px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.dark {
+  color: #fff;
+}
+
+.dark .btn {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+.table th {
+  background: #f4f4f4;
+}
+
+/* chap details  */
+.chap-title {
+  text-align: center;
+}
+.chap-content {
+  text-align: justify;
+  font-size: 1.5rem;
+  background-color: #fffaf0;
+}

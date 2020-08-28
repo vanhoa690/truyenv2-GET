@@ -1,0 +1,15 @@
+include ./layouts/header
+.container
+  section.home-cards
+      if stories
+        each story in stories
+          div
+            img(src='https://i.ibb.co/G57P0Pb/card4.png' alt='')
+            a(href=`${story.slug}`)
+              h3=story.name
+            p
+              | Expect more. World class performance, with more privacy, more
+            a(href=`${story.slug}`)
+              | Learn More
+              i.fas.fa-chevron-right
+include ./layouts/footer

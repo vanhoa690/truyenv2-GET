@@ -1,0 +1,20 @@
+include ./layouts/header
+.container__story
+    section.xbox
+      .content
+        h2 Xbox Game Pass Ultimate
+        p
+          | Xbox Game Pass Ultimate Xbox Live Gold and over 100 high-quality
+          | console and PC games. Play together with friends and discover your
+          | next favorite game.
+        a.btn(href='#')
+          | Join Now
+          i.fas.fa-chevron-right
+    section.story-details
+      h2.my-2
+        | Danh sach Chuong truyen
+      .chaps__list
+       if chaps
+        each chap in chaps
+          a.chap__item(href=`${story.slug}/${chap.slug}`)=chap.name
+include ./layouts/footer

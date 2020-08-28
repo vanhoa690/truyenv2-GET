@@ -1,0 +1,26 @@
+<!-- Showcase -->
+<header class="showcase">
+  <h2>Surface Deals</h2>
+  <p>
+    Select Surfaces are on sale now - save while supplies last
+  </p>
+  <a href="#" class="btn">
+    Shop Now <i class="fas fa-chevron-right"></i>
+  </a>
+</header>
+
+<section class="story">
+  <h2>
+    List Chap
+  </h2>
+  <div class="chaps__list">
+    {{#each chaps}}
+    {{!-- {{{chapList @root.story.slug slug name}}} --}}
+    <a href={{@root.story.slug}}/{{slug}} class="chaps__item">
+      <h4>{{name}}</h4>
+    </a>
+    {{else}}
+    <p>No chaps to display</p>
+    {{/each}}
+  </div>
+</section>

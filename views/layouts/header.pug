@@ -1,0 +1,43 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title=seoInfo ? seoInfo.titleSEO : "Truyen Online"
+  meta(name="description", content=seoInfo ? seoInfo.descSEO : "Truyen Online desc")
+  meta(name="keywords", content="")
+  link(rel="canonical" href=fullUrl)
+  meta(name="ROBOTS" content="INDEX,FOLLOW")
+  meta(property="og:locale" content="vi_VN")
+  meta(property='og:title' content=seoInfo ? seoInfo.titleSEO : "Truyen Online")
+  meta(property='og:description' content=seoInfo ? seoInfo.descSEO : "Truyen Online desc")
+  meta(property='og:url' content=url)
+  meta(property='og:site_name' content='main')
+  meta(property='og:type' content='website')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css')
+  link(rel='stylesheet' href='/style.css')
+.menu-btn
+  i.fas.fa-bars.fa-2x
+.container
+  nav.main-nav
+    a(href='/')
+      img.logo(src='https://i.ibb.co/wwLhz98/logo.png' alt='Microsoft')
+    ul.main-menu
+      li
+        a(href='/') Home
+      li
+        a(href='/story.html') Story
+      li
+        a(href='/chap.html') Chap
+      li
+        a(href='#') Xbox
+      li
+        a(href='#') Deals
+      li
+        a(href='#') Support
+    ul.right-menu
+      li
+        a(href='#')
+          i.fas.fa-search
+      li
+        a(href='#')
+          i.fas.fa-shopping-cart
